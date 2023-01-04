@@ -1,12 +1,12 @@
-.background image {
-    background-image: url(happy nwe year 2023.jpg);
+.backgroundimage {
+    background-image: url(happynweyear2023.jpg);
     color: yellow;
-    height: 100px;
-    width: 200px;
+    height: 400px;
+    width: 500px;
     background-repeat: no-repeat;
     /* left: 30px; */
 }
 
 .content {
-    margin-left: 400px;
+    margin-left: 390px;
 }
