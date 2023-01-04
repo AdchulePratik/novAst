@@ -3,6 +3,100 @@
     properties:value;
 } */
 
+.main{
+    color: aqua;
+    background-color: aquamarine;
+}
+
+/* p {
+    color: brown;
+    font-size: 30px;
+    margin-left: 30px;
+    border: 1px solid black;
+} */
+
+.main1{
+    border: 2px dotted blueviolet;
+    padding-left: 20px;
+}
+
+.main2{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+}
+
+.main3{
+    background-color: red;
+    border: 2px solid black;
+}
+
+.main4{
+    background-color: pink;
+    color: navy;
+}
+
+.container{
+    font-size: ;
+    width: ;
+    margin-left: ;
+    border: 1px solid wheat;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+div.container:hover{
+    overflow: visible;
+}
+
+.container2{ 
+    font-size: 2rem;
+    width: 100px;
+    margin-left: 40px;
+    border: 1px solid black;
+    overflow-y: hidden;
+    overflow-x:  scroll;
+    height: 50;
+}
+
+.textshadow{
+    text-shadow: -6 -7 4px red;
+    font-size: 41px !important;
+}
+
+.textshadow1{
+    font-size: 30px;
+    background-color: cornflowerblue
+}
+
+.container3{
+    background-color: cornflowerblue;
+    font-size: 30px;
+}
+
+.imgopacity{
+    position: absolute;
+    opacity: 1;
+}
+
+div.imgopacity img:hover {
+    opacity: 0.5;
+}
+
+.parent{
+    background-image: url('happy nwe year 2023.jpg');
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1000px;
+    z-index: -1 !important;
+    position: relative;
+}
+
+/* div.main{
+z-index: -1 !important;
+} */
+
 
 
 
