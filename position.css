@@ -1,9 +1,9 @@
-.static-cls {
+.static-cls{
     border: 1px dotted red;
     position: static;
 }
 
-.rel {
+.rel{
     position: relative;
     left: 60px;
     top: 60px;
@@ -11,7 +11,7 @@
 
 }
 
-.fix {
+.fix{
     position: fixed;
     left: 200px;
     bottom: 0px;
@@ -21,7 +21,7 @@
 
 }
 
-.parent {
+.parent{
     position: relative;
     height: 1000px;
     width: 900px;
