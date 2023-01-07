@@ -1,0 +1,27 @@
+.dropdown{
+    position: relative;
+    background-color: #f3b8f3;
+    overflow: hidden;
+    font-size: 40px;
+    cursor: progress;
+}
+
+.dropdown a{
+    text-decoration: firebrick;
+}
+
+.dropdown-content a{
+    text-decoration: firebrick;
+}
+
+.dropbtn{
+    background-color: goldenrod;
+    padding: 6px;
+    border: none;
+    color: chocolate;
+    cursor: progress;
+}
+
+.dropdown.dropbtn.test{
+    cursor: progress;
+}
