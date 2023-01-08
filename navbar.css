@@ -4,6 +4,7 @@
     overflow: hidden;
     font-size: 40px;
     cursor: progress;
+    border-image: auto;
 }
 
 .dropdown a{
