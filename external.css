@@ -3,11 +3,11 @@
     properties:value;
 } */
 
-.main{
-    color: aqua;
-    background-color: aquamarine;
-}
 
+.main{
+    color: khaki;
+    background-color: darkcyan;
+}
 /* p {
     color: brown;
     font-size: 30px;
@@ -16,62 +16,61 @@
 } */
 
 .main1{
-    border: 2px dotted blueviolet;
+    border: 2px solid darkgreen;
     padding-left: 20px;
 }
 
 .main2{
-    background-color: antiquewhite;
-    border: 2px solid black;
-    height: 100px;
-    width: 200px;
+    color: red;
+    border: 2px solid cyan;
+    background-color: lightcoral;
+    height: 10px;
+    width: 200px; 
 }
 
 .main3{
-    background-color: red;
-    border: 2px solid black;
+    background-color: coral;
+    border: 15px;
 }
 
-.main4{
-    background-color: pink;
-    color: navy;
-}
-
-.container{
-    font-size: ;
-    width: ;
-    margin-left: ;
-    border: 1px solid wheat;
+.container1{
+    font-size: 2rem;
+    width: 250px;
+    margin-left: 60px;
+    border: 2px solid darkmagenta;
     overflow: hidden;
     text-overflow: clip;
 }
 
-div.container:hover{
-    overflow: visible;
+div.container.hover{
+    overflow: visible ;
 }
 
-.container2{ 
+.container2{
     font-size: 2rem;
     width: 100px;
     margin-left: 40px;
-    border: 1px solid black;
-    overflow-y: hidden;
-    overflow-x:  scroll;
-    height: 50;
+    border: 2px solid lightcoral;
+    overflow-y: auto;
+    overflow-x: scroll;
+    height: 50px
 }
 
 .textshadow{
-    text-shadow: -6 -7 4px red;
-    font-size: 41px !important;
+    text-shadow: -6px -7px 4px hotpink;
+    font-size: 30px !important ;
+      /* background-color: cornflowerblue; */
 }
 
 .textshadow1{
-    font-size: 30px;
-    background-color: cornflowerblue
+    text-shadow: -2px -3px 4px maroon;
+    font-size: 30px ;
+ 
+    
 }
 
-.container3{
-    background-color: cornflowerblue;
+.container2{
+    background-color: darkkhaki;
     font-size: 30px;
 }
 
@@ -80,18 +79,37 @@ div.container:hover{
     opacity: 1;
 }
 
-div.imgopacity img:hover {
-    opacity: 0.5;
+.imgopacity.imgopacity2 img:hover{
+    opacity: 1;
 }
 
 .parent{
-    background-image: url('happy nwe year 2023.jpg');
+    background-image:url('happynweyear2023.jpg') ;
     background-repeat: no-repeat;
     height: 1000px;
     width: 1000px;
-    z-index: -1 !important;
-    position: relative;
-}
+    position: absolute;
+     /* z-index: 1 !important; add this only to hide content behind img or element */
+    }
+    
+    div.main{
+        z-index: -1!important;
+    }
+
+    .imgopacity2{
+        font-size: 20px;
+    } 
+     
+
+
+
+
+
+
+
+
+
+
 
 /* div.main{
 z-index: -1 !important;
