@@ -6,6 +6,8 @@
 .dropdown {
     background-color: lightblue;
     overflow: hidden;
+    
+
 }
 
 .dropdown a {
@@ -26,17 +28,17 @@
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 30px; */
+    font-size: 30px; 
 }
 
 .dropdown-content{
     position: absolute;
     min-width: 140px;
-    /* min-height: 140px; */
+    min-height: 140px;
     background-color:firebrick ;
-    /* display: block; */
+    display: block;
     display: none;
-    /* font-weight: bolder; */
+    font-weight: bolder;
 }
 
 .dropdown-content a{
@@ -47,12 +49,12 @@
 }
 
 .dropdown-container:hover .dropdown-content{
-    display: block;
+     display: block; 
 }
 
 .dropbtn:hover{
-    background-color:slategrey;
-    opacity: 1;
+    /* background-color:slategrey; */
+    opacity: 0.5;
 }
 
 .dropdown-content a:hover{
