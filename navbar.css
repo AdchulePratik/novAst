@@ -1,28 +1,70 @@
-.dropdown{
-    position: relative;
-    background-color: #f3b8f3;
-    overflow: hidden;
-    font-size: 40px;
-    cursor: progress;
-    border-image: auto;
+.parent-container {
+    min-height: 100%;
+    background-color: rgb(255, 105, 205);
 }
 
-.dropdown a{
-    text-decoration: firebrick;
+.dropdown {
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.dropdown a {
+    text-decoration: none;
+    float: left;
+    padding: 13px 16px;
+    font-size: 30px;
+}
+
+.dropdown-container {
+    overflow: hidden;
+    float: left;
+}
+
+.dropbtn {
+    background-color: hotpink;
+    padding: 17px 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 30px; */
+}
+
+.dropdown-content{
+    position: absolute;
+    min-width: 140px;
+    /* min-height: 140px; */
+    background-color:firebrick ;
+    /* display: block; */
+    display: none;
+    /* font-weight: bolder; */
 }
 
 .dropdown-content a{
-    text-decoration: firebrick;
+    text-decoration: none;
+    display: block;
+    padding: 13px 16px;
+    float: none;
 }
 
-.dropbtn{
-    background-color: goldenrod;
-    padding: 6px;
-    border: none;
-    color: chocolate;
-    cursor: progress;
+.dropdown-container:hover .dropdown-content{
+    display: block;
 }
 
-.dropdown.dropbtn.test{
-    cursor: progress;
+.dropbtn:hover{
+    background-color:slategrey;
+    opacity: 1;
 }
+
+.dropdown-content a:hover{
+    background-color: aqua;
+}
+
+
+
+    
+
+    
+
+
+
+
