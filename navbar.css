@@ -1,11 +1,15 @@
 .parent-container {
-    min-height: 100%;
-    background-color: rgb(255, 105, 205);
+    min-height: 500%;
+    background-color: lightpink;
 }
 
 .dropdown {
     background-color: lightblue;
     overflow: hidden;
+    z-index:1;
+    position:sticky;
+    top:0px
+
     
 
 }
@@ -14,7 +18,7 @@
     text-decoration: none;
     float: left;
     padding: 13px 16px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .dropdown-container {
@@ -28,11 +32,12 @@
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 30px; 
+    font-size: 20px; 
+    
 }
 
 .dropdown-content{
-    position: absolute;
+    position: revert;
     min-width: 140px;
     min-height: 140px;
     background-color:firebrick ;
@@ -61,6 +66,55 @@
     background-color: aqua;
 }
 
+.link-3-container{
+    overflow: hidden;
+    /* float: left; */
+}
+
+.dropdown-link3-content{
+    position: revert;
+    min-width: 140px;
+    /* min-height: 140px; */
+    background-color: darkgoldenrod;
+    /* display: block; */
+    display: none;
+    top: 100px;
+    left: 142px;
+    overflow: scroll;
+}
+
+.link-3-container:hover .dropdown-link3-content{
+    display: block;
+}
+
+.sidebar{
+    position: revert;
+    width: 120px;
+    background-color: lightseagreen;
+    min-height: 2000px;
+    top: 2px;
+    font-size: 20PX;
+}
+
+.footer{
+    position: fixed;
+    bottom:0px;
+    height: 50px;
+    background-color: lightcoral;
+    min-width: 99%;
+
+}
+
+.middle-container{
+    position: absolute;
+    left: 135px;
+    padding: 6px;
+    height: 300%;
+}
+
+.header{
+    height: 30px;
+}
 
 
     
