@@ -1,24 +1,21 @@
 .parent-container {
-    min-height: 500%;
+    min-height: 200%;
     background-color: lightpink;
 }
 
 .dropdown {
     background-color: lightblue;
     overflow: hidden;
-    z-index:1;
-    position:sticky;
-    top:0px
-
-    
-
+    /* z-index: 1;
+    position: sticky;
+    top: 0px */
 }
 
 .dropdown a {
     text-decoration: none;
     float: left;
     padding: 13px 16px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .dropdown-container {
@@ -32,47 +29,48 @@
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 20px; 
-    
+    /* font-size: 20px; */
+
 }
 
-.dropdown-content{
-    position: revert;
+.dropdown-content {
+    position: absolute;
     min-width: 140px;
     min-height: 140px;
-    background-color:firebrick ;
+    background-color: firebrick;
     display: block;
     display: none;
     font-weight: bolder;
+    z-index: 1;
 }
 
-.dropdown-content a{
+.dropdown-content a {
     text-decoration: none;
     display: block;
     padding: 13px 16px;
     float: none;
 }
 
-.dropdown-container:hover .dropdown-content{
-     display: block; 
+.dropdown-container:hover .dropdown-content {
+    display: block;
 }
 
-.dropbtn:hover{
+.dropbtn:hover {
     /* background-color:slategrey; */
     opacity: 0.5;
 }
 
-.dropdown-content a:hover{
+.dropdown-content a:hover {
     background-color: aqua;
 }
 
-.link-3-container{
+.link-3-container {
     overflow: hidden;
     /* float: left; */
 }
 
-.dropdown-link3-content{
-    position: revert;
+.dropdown-link3-content {
+    position: sticky;
     min-width: 140px;
     /* min-height: 140px; */
     background-color: darkgoldenrod;
@@ -80,46 +78,87 @@
     display: none;
     top: 100px;
     left: 142px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
-.link-3-container:hover .dropdown-link3-content{
+.link-3-container:hover .dropdown-link3-content {
     display: block;
 }
 
-.sidebar{
+.sidebar {
     position: revert;
     width: 120px;
     background-color: lightseagreen;
     min-height: 2000px;
     top: 2px;
     font-size: 20PX;
+    overflow-y: scroll;
+    height: 95%;
 }
 
-.footer{
-    position: fixed;
-    bottom:0px;
+.footer {
+    position: revert;
+    /* bottom: 0px; */
     height: 50px;
     background-color: lightcoral;
     min-width: 99%;
+    overflow: scroll;
+    height: 80%;
+    min-height:1000px;
+    width:1500px;
+    top:2px;
+
 
 }
 
-.middle-container{
+.middle-container {
     position: absolute;
     left: 135px;
     padding: 6px;
-    height: 300%;
+    min-height: 50%;
+    height: 100%;
+    overflow-y: scroll;
+ 
+   
+  
 }
 
-.header{
+
+.header {
     height: 30px;
 }
 
+.middle-container {
+    position: absolute;
+    left: 135px;
+    padding: 6px;
+    min-height: 50%;
+    height: 300%;
+    overflow-y: scroll
+}
 
-    
+.mid-container-words {
+    position: absolute;
+    background-color: lightgray;
+    height: 200px;
+    width: 200px;
+    display: block;
+    top: 180px;
+    left: 273px;
+    overflow: hidden;
+}
 
-    
+.bott-container-words{
+    position: bottom;
+    background-color: lightgray;
+    height: 200px;
+    width: 200px;
+    display: block;
+    top: 180px;
+    left: 273px;
+    overflow: hidden;
+}
+
 
 
 
