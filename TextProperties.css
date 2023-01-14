@@ -1,0 +1,37 @@
+.word-properties{
+    width: 200px;
+    border: 2px solid black;
+    word-break: break-all;  /*it will break at any character */
+}
+
+.word-properties1{
+    width:200px;
+    border:2px solid black;
+    word-break:break-word
+}
+
+.word-properties2{
+    width:200px;
+    border:2px solid black;
+    word-break:keep-all;
+}
+
+.word-properties3{
+    width:200px;
+    border:2px solid black;
+    word-wrap:break-word;
+}
+
+.multicolumn-property{
+    column-count:5;
+    column-gap:30px;
+    /* column-rule-style:groove; */
+    column-rule: 8px groove;
+    column-rule-color:red;
+    column-rule-width:8px;
+}
+
+.pratik{
+    font-size: bold;
+    background-color: aqua;
+}
