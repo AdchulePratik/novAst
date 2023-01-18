@@ -1,12 +1,12 @@
 .main{
     position: absolute;
     top: 40px;
-    color: red;
-    z-index: -1;
-    left: 40px;
+    color: lightsalmon;
+    z-index: 1;
+    left: 10px;
 }
+
 .maintop{
-    position: absolute;
-    top: 40px;
+    position:revert ;
+    top:40px;
 }
-    

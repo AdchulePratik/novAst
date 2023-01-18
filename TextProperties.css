@@ -1,25 +1,43 @@
+.parent-container{
+    background-color: black;
+    height: 10%;
+    font-size: 60PX;
+    color: lightskyblue;
+}
+
+
+
+
+
 .word-properties{
     width: 200px;
     border: 2px solid black;
     word-break: break-all;  /*it will break at any character */
+    color: white;
+    
 }
 
 .word-properties1{
     width:200px;
     border:2px solid black;
-    word-break:break-word
+    word-break:break-word;
+    color: white;
+    
+    
 }
 
 .word-properties2{
     width:200px;
     border:2px solid black;
     word-break:keep-all;
+    color: white;
 }
 
 .word-properties3{
     width:200px;
     border:2px solid black;
     word-wrap:break-word;
+    color: white;
 }
 
 .multicolumn-property{
@@ -29,9 +47,18 @@
     column-rule: 8px groove;
     column-rule-color:red;
     column-rule-width:8px;
+    color: aquamarine;
+    
+
 }
 
 .pratik{
     font-size: bold;
     background-color: aqua;
+}
+
+.body{
+    background-color: maroon;
+    background-image: url('Flowers-Wallpaper-HD.jpg');
+    
 }

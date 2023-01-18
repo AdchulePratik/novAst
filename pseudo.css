@@ -1,0 +1,51 @@
+
+/* p:hover h2.h2-container{
+    display: block;
+    background-color:deeppink ;
+}
+
+.h2-container{
+    display: none;
+}
+
+h1{
+    display: none;
+}
+
+p:hover h1{
+    display: block;
+}  */
+
+p{
+    display: none;
+    background-color:darkolivegreen ;
+    padding: 20px;
+}
+
+div:hover p{
+    display: block;
+}
+
+/* h3{
+    display: none;
+}
+
+h1:hover h3{
+    display: block;
+    background-color:darkorchid;
+} */
+
+div{
+    display: none;
+    background-color:violet ;
+    padding: 20px;
+}
+
+h1:hover div{
+    display: block ;
+}
+
+body{
+    background-color: mediumvioletred;
+}
+

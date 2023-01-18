@@ -33,14 +33,34 @@
     border: 15px;
     font-size: 2rem;
     font-weight: 800;
-    opacity: 1;
-    
+    /* opacity: 1; */
+}
 
-    
+.main4{
+    background-color: firebrick;
+    color: fuchsia;
+}
+
+.container {
+    font-size: 2rem;
+    width: 250px;
+    margin-left: 60px;
+    border: 2px solid darkmagenta;
+    overflow: hidden;
+    text-overflow: clip;
 
 }
 
 .container1{
+    font-size: 2rem;
+    width: 250px;
+    margin-left: 60px;
+    border: 2px solid darkmagenta;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.container2{
     font-size: 2rem;
     width: 250px;
     margin-left: 60px;
@@ -89,8 +109,8 @@ div.container.hover{
     opacity: 1;
 }
 
-.imgopacity.imgopacity2 img:hover{
-    opacity: 1;
+.imgopacity.imgopasity2 img:hover{
+    opacity: 0.5 ;
 }
 
 .parent{
@@ -99,14 +119,14 @@ div.container.hover{
     height: 1000px;
     width: 1000px;
     position: absolute;
-     /* z-index: 1 !important; add this only to hide content behind img or element */
+     /* z-index: 1 !important; add this only to hide content behind img or element */ 
     }
     
-    div.main{
+    /* div.main{
         z-index: -1!important;
-    }
+    } */
 
-    .imgopacity2{
+    .imgopasity2{
         font-size: 20px;
     } 
      

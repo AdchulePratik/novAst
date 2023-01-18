@@ -1,0 +1,24 @@
+div p{
+    background-color: aqua;
+}
+
+div > h1{
+    background-color: darkcyan;
+} 
+
+div + p{
+    background-color: springgreen;
+}
+
+
+
+
+
+
+
+
+div ~ p {
+    background-color:darkorange ;
+}
+
+
