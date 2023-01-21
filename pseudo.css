@@ -49,3 +49,82 @@ body{
     background-color: mediumvioletred;
 }
 
+input:focus{
+    background-color: aqua;
+}
+
+input[type=text]:focus{
+    background-color: goldenrod;
+}
+
+input[type=number]:focus{
+    background-color: lightblue;
+}
+
+a:link{
+    color:brown ;
+}
+
+a:visited{
+    color: cornflowerblue;
+}
+
+a:active{
+    color:darkcyan ;
+}
+
+input:checked{
+    background-color:darksalmon ;
+    width: 30px;
+    height: 30px;
+    border: 1px dotted hotpink;
+}
+
+input[type=text]:disabled{
+    background-color: bisque;
+}
+
+CSS Attributes Selectors
+
+a[target]{
+    background-color: aqua;
+}
+
+a[target=_blank]{
+    background-color: brown;
+}
+
+[title~=mypic]{
+    border: 8px solid yellow;
+}
+
+[class|=test]{
+    background-color: blue;
+}
+
+[class^=start]{
+    background-color: cadetblue;
+}
+
+[class$=test1]{
+    background-color: antiquewhite;
+}
+
+.first-letter{
+    font-size: 30px;
+    color: violet;
+}
+
+h5::first-letter{
+    font-size: 30px;
+    color: violet;
+}
+
+h6::first-line{
+    font-size: 20px;
+    color: yellow;
+}
+
+p.content-main::before{
+    content: "---------paaaaaaaa--addddddddd";
+}  
