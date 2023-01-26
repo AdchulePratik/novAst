@@ -72,9 +72,29 @@ function greet() {
     console.log(b); //error
 }
 
-// variable a cannot be used here
+function diffletvar() {
+    let a='hello'
+    if (true){
+        var b='world'
+        console.log('inside block b-->',b);
+        console.log('favFruit-->',favFruit);
+        console.log('a',a);
+        b='world2023'
+        console.log('outside block b value',b);
+    }
 
-greet();
+    console.log('outside block b-->',b);
+    console.log('favFruit-->',favFruit);
+    console.log('a',a);
+    
+}
+
+//var keyword variable's scope is:function level scope
+//let keyword variable's scope is:block level scope
+//console.log('outside fun',b); //uncaught re error
+
+diffletvar();
+
 
 
 
