@@ -28,14 +28,14 @@ var mobNo ;  //declare  //  hoisting  possible with var keyword.
 console.log(mobNo);
 
 const myName = 'Pratik'; //value reassign with const keyword is not possible
-//myName = 5000;
+//myNobr = 5000;
 console.log(myName);
 //const myName = 'Adchule' //redeclaration of variable is not possible with const keyword
-// const g = 50;
+// const g = 50;   
 //g = 50; //hoisting of variable is not possible with const keyword
 //const g;
 
-//function:
+//function: 
 //function syntax: function(res keyword)functionNmae(){}
 
 function myFirstFunction() {
@@ -80,7 +80,7 @@ function diffletvar() {
         console.log('favFruit-->',favFruit);
         console.log('a',a);
         b='world2023'
-        console.log('outside block b value',b);
+        console.log('outside block b value'.b);
     }
 
     console.log('outside block b-->',b);
@@ -93,7 +93,7 @@ function diffletvar() {
 //let keyword variable's scope is:block level scope
 //console.log('outside fun',b); //uncaught re error
 
-diffletvar();
+diffletvar(); 
 
 
 
