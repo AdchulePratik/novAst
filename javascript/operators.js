@@ -43,34 +43,34 @@ console.log(value4);
 // ! logical operator not
 
 var num1=null;
-var num=50;
-if (num1 > 80 && num < 80){
-    console.log('ANDDD');
+var num2=50;
+if (num1 > 80 && num2 < 80){
+    console.log('Pratik');
 }
 
-if (num1 >=80 || num <= 80){
-    console.log('ORRR');
+if (num1 >= 80 || num2 <= 80){
+    console.log('Adchule');
 }
 
-if (num == 50 && num1 == undefined){
+if (num2 == 50 && num1 == undefined){
     console.log('!!!!!!!!!!!!!!!111');
 }
 
 //= == === difference
 
 var myRank='2' //Assignment operator used to assign value to the variable
-var samRank=2
+var samrank=2
 
 //equality operator
-if (myRank == samRank){ //it will compare only value of variables
+if (myRank == samrank){ //it will compare only value of variables
+    console.log("equality===================================================== operator");
+}
+
+if (myRank == samrank){ //it will compare value as well as data type of variable
     console.log('equality operator');
 }
 
-if (myRank === samRank){ //it will compare value as well as data type of variable
-    console.log('equality operator');
-}
-
-if (myRank !==samRank ){
+if (myRank !==samrank ){
     console.log('!==condition');
 }
 
@@ -78,11 +78,11 @@ if (myRank !==samRank ){
 //condition-->(true)? true:false;
 let city='Banglore'
 if (city === 'Banglore'){
-    console.log('i live in Akola');
+    console.log("i live in AKOLA");
 }
 else
 {
     console.log('i live Pune');
 }
 
-city === 'Banglore' ? console.log('i live in Akola') : console.log('i live Pune');
+city === 'Banglore' ? console.log('i live in America') : console.log('i live Pune');
