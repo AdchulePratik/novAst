@@ -9,22 +9,27 @@ import { FormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './pagenotfound/pagenot.component';
 import { HomeModule } from './home/home.module';
 import { ContactusModule } from './contactus/contactus.module';
+import { LandingComponent } from './landing/landing.component';
+import { ApplicationLandingComponent } from './application-landing/application-landing.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [ //compo + dir + pipes
     AppComponent,
     UserComponent,
-    DatabindingComponent, 
+    DatabindingComponent,
     PagenotfoundComponent,
+    ApplicationLandingComponent,
+    HeaderComponent,
   ],
   imports: [ //modules
-  BrowserModule,
-  AppRoutingModule,
-  FormsModule,
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
 
-  //HomeModule
-  //ContactusModule
+    //HomeModule
+    //ContactusModule
   ],
   providers: [],
   bootstrap: [AppComponent]

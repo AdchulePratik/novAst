@@ -1,28 +1,27 @@
-import { Component } from '@angular/core/';
+import { Component } from '@angular/core';  // import section : where we add dependency classes
 import { Router } from '@angular/router';
 
-@Component({
+@Component({  //component directive section: metadata about component
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'Angular-Real-Work'; //properties
-  myName = 'Pratik';
+export class AppComponent { //main component class : where we write code logic
+  title = 'angular_novbatch'; //properties
+  myName = 'pratik';
   car = 'BMW';
-  mySurname: string = 'Adchule';
-  mySurname2?: string;//syntac change
-  //mySurname2 :string;
-  testproperty: any = 5000;
+  mySurname : string = 'adchule';
+  mySurname2? : string; //syntax change 
+ // mySurname2 : string;
+ testProperty : any = 5000;
 
-  constructor(private router: Router) { //constructor :just normal function but it will triger impilicity by compiler
-    console.log('inside instructor..');
+  constructor(private router : Router){  // constructor : just normal function but it will triger implicity by compiler
+      console.log('inside constuctor..');
   }
-
+  
   test(){
     var xyz = 100;
-    this.mySurname2 = "Patil";
-    
+    this.mySurname2 = 'Jadhav';
   }
 
   test2(){
@@ -30,15 +29,17 @@ export class AppComponent {
     this.test();
   }
   redirect(){
-    this.router.navigateByUrl('./Admin') 
+        this.router.navigateByUrl('/admin')
   }
-   aboutusRedirect(){
-    this.router.navigateByUrl('./aboutus-Module/Aboutusdetails')
+  aboutUsRedirect(){
+    this.router.navigateByUrl('/aboutUs-Module/aboutUsDetails')
   }
-
-
-
-
 
 }
+
+
+
+
+
+
 

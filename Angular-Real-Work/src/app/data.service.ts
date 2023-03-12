@@ -5,13 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
   data = {
-    name: 'Pratik',
+    name:'pratik',
     age: 26,
-    mobNo:9011742609
+    mobNo: 9011742609
   };
-  carName = 'BMW';
 
-  constructor(){ }
+  carName = 'BMW...';
+  fruit! : any;
 
-  
+  constructor() { }
 }

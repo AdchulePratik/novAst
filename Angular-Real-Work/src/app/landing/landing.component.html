@@ -1,1 +1,13 @@
-<p> Landing Works..!!</p>
+<p>landing works!</p>
+{{carName}}
+
+<button (click)="getData()">get Data</button>
+<button (click)="setData()">set Data</button>
+
+<div *ngIf="data">
+{{data.name}}
+</div>
+
+<div *ngIf="fruit">
+{{fruit}}
+</div>

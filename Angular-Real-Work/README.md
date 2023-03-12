@@ -47,6 +47,8 @@ if facing error: npm i -f
 again delet node_module folder and again do npm i or npm i -f.
 >>if did successufull installaion of npm pcks>> ng s/cmd will given to u by ur team memers to serve application
 
-ng g c admin
-ng g m admin --routing
-ng g m admin --route admin --module app.module 
+ng g c admin   //use component command
+ng g m admin --routing   //use module & routing create command
+ng g m admin --route admin --module app.module  //use module & routing with component create command
+ng s -o   //use Compile Run working command
+ng g s Dataservice  //use Dataservice command

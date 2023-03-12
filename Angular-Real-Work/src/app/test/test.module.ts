@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TestRoutingModule } from './test-routing.module';
-import { TestComponent } from './test/test.component';
+import { TestHomeComponent } from './test-home/test-home.component';
+import { TestContactComponent } from './test-contact/test-contact.component';
 
 
 @NgModule({
   declarations: [
-    TestComponent
+    TestHomeComponent,
+    TestContactComponent
   ],
   imports: [
     CommonModule,
