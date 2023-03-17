@@ -16,7 +16,8 @@ export class TestContactComponent {
 
   getData() {
     // fetching function from service 
-    this.webTitle = this.datatestService.test();
+    this.webTitle = this.datatestService.test(  );
+    
   }
 
 }

@@ -7,11 +7,11 @@ import { UserComponent } from './user/user.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './pagenotfound/pagenot.component';
-import { HomeModule } from './home/home.module';
+import { HomeRoutingModule } from './landing/home-routing.module';
 import { ContactusModule } from './contactus/contactus.module';
-import { LandingComponent } from './landing/landing.component';
 import { ApplicationLandingComponent } from './application-landing/application-landing.component';
 import { HeaderComponent } from './header/header.component';
+import { ImageComponent } from './image/image.component';
 
 
 @NgModule({
@@ -22,6 +22,8 @@ import { HeaderComponent } from './header/header.component';
     PagenotfoundComponent,
     ApplicationLandingComponent,
     HeaderComponent,
+    ImageComponent,
+    
   ],
   imports: [ //modules
     BrowserModule,

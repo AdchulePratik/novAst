@@ -16,7 +16,7 @@ export class DatabindingComponent {
   // return 'Raj';
   return this.disableBox;
   }
-  changingInpuValue(){
+  changingInputValue(){
    return this.surName;
   }
 

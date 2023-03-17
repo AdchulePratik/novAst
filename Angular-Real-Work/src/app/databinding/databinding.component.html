@@ -15,7 +15,7 @@ two db :two way db -->
 <br>
 <!-- property binding can handle disabled atrr,but
      interpollation can not handle disabled attrr -->
- <input type="text" value="poonam">Name <br> <!--noramal way to display value initially -->
+ <input type="text" value="pratik">Name <br> <!--noramal way to display value initially -->
  <input type="text" value="myName"> <br> <!--myName-->
  <input type="text" [value]="myName"> <br>
  <input type="text" value = {{myName}}> <br>
@@ -27,4 +27,4 @@ for two way data binding we use ngModel directive so we need to import formsModu
 <br><br>
 <input type="text" [(ngModel)] = "surName">
 {{surName}}
-{{changingInpuValue()}}
+{{changingInputValue()}}
