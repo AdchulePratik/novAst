@@ -6,8 +6,10 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenot.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { UserComponent } from './user/user.component';
+import { FormComponent } from './form/form.component';
+
 
 const routes: Routes = [
   { path: '', component: ApplicationLandingComponent },
@@ -15,10 +17,11 @@ const routes: Routes = [
   { path: 'databinding', component: DatabindingComponent },
   { path: 'homeModule-home', component: HomeComponent },
   { path: 'landing', component: LandingComponent },
-  { path: 'aboutuslandingComponent', component :AboutuslandingComponent},
+  { path: 'aboutuslandingComponent', component: AboutuslandingComponent },
 
   //{ path: 'aboutUsLanding', component :AboutuslandingComponent},dont do like this
   { path: 'directives', component: DirectivesComponent },
+  { path: 'form', component: FormComponent },
 
   //Lazy Loading Concept
 
@@ -26,8 +29,6 @@ const routes: Routes = [
   { path: 'aboutUs-Module', loadChildren: () => import('./aboutus/aboutus.module').then(mod => mod.AboutusModule) },
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   { path: 'test', loadChildren: () => import('./test/test.module').then(mod => mod.TestModule) },
-
-
   { path: '**', component: PagenotfoundComponent },
 ];
 

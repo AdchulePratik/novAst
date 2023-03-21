@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
-import { PagenotfoundComponent } from './pagenotfound/pagenot.component';
-import { HomeRoutingModule } from './landing/home-routing.module';
+import { HomeModule } from './landing/home.module';
 import { ContactusModule } from './contactus/contactus.module';
 import { ApplicationLandingComponent } from './application-landing/application-landing.component';
 import { HeaderComponent } from './header/header.component';
-import { ImageComponent } from './image/image.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { FormComponent } from './form/form.component';
+import { CharactersonlyDirective } from './charctersonly.directive';
+import { SearchtextPipe } from './searchtext.pipe';
+import { CurrencyPipe1 } from './currency.pipe';
+
+
+
+
 
 
 @NgModule({
@@ -22,8 +30,13 @@ import { ImageComponent } from './image/image.component';
     PagenotfoundComponent,
     ApplicationLandingComponent,
     HeaderComponent,
-    ImageComponent,
-    
+    DirectivesComponent,
+    FormComponent,
+    CharactersonlyDirective,
+    SearchtextPipe,
+    CurrencyPipe1,
+
+
   ],
   imports: [ //modules
     BrowserModule,

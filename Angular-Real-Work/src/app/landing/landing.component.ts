@@ -9,51 +9,44 @@ import { DataService } from 'src/app/data.service';
 export class LandingComponent {
   carName!: string;
   data:any;
-  fruit!:any;
-  color:any;
+  fruit:any;
   studentName!: string;
 
-  constructor(private dataService: DataService){
+constructor(private dataService: DataService){
 
-  }
+}
   ngOnInit(){
     //get set
-    this.carName =this.dataService.carName; //getting carname property's value
-    this.dataService.fruit ="APPLE";//seeting fruit property's value
-    this.color ='Red';
+     this.carName =  this.dataService.carName; //getting carname proprty's value
+     this.dataService.fruit = "Orange"; //setting fruit property's value
   }
   //to fetch data from service
   getData(){
-    //get set
-    this.data =this.dataService.data;
-    this.fruit =this.dataService.fruit;
-    console.log('this.fruit',this.fruit); 
-    this.color =this.dataService;
-    console.log('Whats color',this.color);
-    
+        //get set
+   this.data = this.dataService.data;
+   this.fruit = this.dataService.fruit;
+   console.log('this.fruit ',this.fruit );
   }
   setData(){
-    this.dataService.fruit =1234;
-    this.color ='Red';
+    this.dataService.fruit = 12333;
   }
 
-  //aternate way of get and set:dont use this
-  getStudentName(){
-    this.studentName =this.dataService.getStudentName();
-    console.log('studentName',this.studentName);  
+ //aternate way of get and set:dont use this
+  getStudentName() {
+    this.studentName = this.dataService.getStudentName();
+    console.log('studentName', this.studentName);
   }
   setStudentName(){
-    let name ='Pooja';
+    let name = 'Priya';
     this.dataService.setStudentName(name);
-    console.log(this.dataService.studentName);   
+    console.log(this.dataService.studentName);
   }
-   //reusablity of function
-   multiplication(){
-    let res =this.dataService.multiplication(20,30);
+
+  //reusablity of function
+  multiplication(){
+    let res = this.dataService.multiplication(20,30);
     console.log('res',res);
-    
-   }
-
-
-
+    }
 }
+
+

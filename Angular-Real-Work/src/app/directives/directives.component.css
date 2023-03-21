@@ -1,5 +1,15 @@
 .main{
-    background-color:deeppink;
-    height: 400px;
-    width: 400px;
+  background-color: aquamarine;
+  height: 200px;
+  width: 200px;
+}
+.main2{
+  background-color: brown;
+  height: 100px;
+  width: 200px;
+}
+.main3{
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
 }

@@ -1,21 +1,17 @@
-<p>landing works!</p>
+<br><br>
 {{carName}}
 
-<button (click)="getData()">get Data</button>
+<button (click)="getData()">getData</button>
 <button (click)="setData()">set Data</button>
 
-<div *ngIf="data">
-{{data.name}}
+<div *ngIf = "data">
+    {{data.name}}
 </div>
 
-<div *ngIf="fruit">
-{{fruit}}
+<div *ngIf = "fruit">
+    {{fruit}}
 </div>
-
-<div *ngIf="color" >
-    {{color}}
-</div>
-
 <button (click)="getStudentName()">Student Name</button>
+
 <button (click)="setStudentName()">set Student Name</button>
 <button (click)="multiplication()">multiplication</button>

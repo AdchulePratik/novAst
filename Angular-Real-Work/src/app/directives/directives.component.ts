@@ -6,57 +6,58 @@ import { Component } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent {
-  para:any;
-   //Note:property para = undefine/false = false ; 
+
+  para: any;
+  //Note:property para = undefine/false = false ;
   //property para = value:any data type or true = true
-  show:any = false;
-  items =[10,20,30,40];
-  showStudentData: boolean =true;
-  // image ='/assets/image/rasika.png';
-  color ='red';
-  styleProperty ='main2';
-  stylePropertyNew =1234;
-  multipleStyle ='Adchule';
-
-
-
-  student =[
+  show: any = false;
+  items = [10, 20, 30, 40];
+  showStudentData: boolean = true;
+  color = 'pink';
+  styleProperty = 'main2';
+  stylePropertyNew = 2000000;
+  multipleStyle = 'Bhapkar';
+  inLineCss = 'red';
+  headingProperty: any;
+  student = [
     {
-      name:'Pratik',
-      age:26,
-      hobby:'CHESS'
+      name: 'Raj',
+      age: 20,
+      hobby: 'painting'
     },
     {
-      name:'pooja',
-      age:23,
-      hobby:'drawing'
+      name: 'Rupa',
+      age: 20,
+      hobby: 'Dancing'
     },
     {
-      name:'reshma',
-      age:24,
-      hobby:'Painting'
+      name: 'Ram',
+      age: 20,
+      hobby: 'Scketing'
     },
     {
-      name:'Rani',
-      age:23,
-      hobby:'sketching'
+      name: 'Ravi',
+      age: 40,
+      hobby: 'Swimming'
     },
-
   ]
+  // hideDiv() {
+  //   this.show = false;
+  // }
+  hidShowDiv(value: boolean) {
+    this.show = value;
+  }
+  showDiv() {
+    this.show = true;
+  }
 
-  hideDiv(){
-    this.show =false;
+  toggle1() {
+    this.show = !this.show; //!undefined or !false  = true
   }
-  showDiv(){
-    this.show =true;
-  }
-  toggle(){
-    this.show = this.show; ////!undefined or !false  = true
-  }
-  switchColors(color:string){
+  switchColors(color: string) {
     this.color = color;
-
   }
-
-
+  setClass(): any {
+    return 'main';
+  }
 }

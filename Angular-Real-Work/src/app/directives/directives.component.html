@@ -6,68 +6,96 @@ Attribute Directives
 Component Directives: Component directives are used in main class. They contain the detail of how the component should be processed, instantiated and used at runtime.
 Structural Directives: Structural directives start with a * sign.
  These directives are used to manipulate and change the structure of the DOM elements.
- For example, *ngIf directive, *ngSwitch directive, and *ngFor directive. 
+ For example, *ngIf directive, *ngSwitch directive, and *ngFor directive.
 *ngIf Directive: The ngIf allows us to Add/Remove DOM Element.
-*ngSwitch Directive: The *ngSwitch allows us to Add/Remove DOM Element. It is similar to switch statement of C#.
+*ngSwitch Directive: The *ngSwitch allows us to Add/Remove DOM Element. It is similar to switch statement of js.
 *ngFor Directive: The *ngFor directive is used to repeat a portion
  of HTML template once per each item from an iterable list (Collection).-->
 
- <p ngIf="para">paragraph..</p>
+ <p *ngIf="para">paragraph.....</p>
 
- <div class="main" ngIf="show">
-    div..
-    <p></p>
-    <h1>h111</h1>
-</div>
+ <div class="main" *ngIf="show">
+     divvv...
+     <p></p>
+     <h1>h1111</h1>
 
-<button (click)="hideDiv()">hide</button>
-<button (click)="showDiv()">show</button>
-<button (click)="toggle()">toggle</button>
-<!-- 
-{{items}} -->
+ </div>
+ <br>
+ <!-- <button (click)="hideDiv()">hide</button>
+ <button (click)="showDiv()">show</button> -->
+ <button (click)="hidShowDiv(false)">hide</button>
+ <button (click)="hidShowDiv(true)">show</button>
 
-<div *ngFor="let item of items">
-    <p>{{item--1}}</p>
-    <!-- <p>{{item--2}}</p> -->
+ <button (click)="toggle1()">toggle</button><br>
+ <!--
+ {{items}} -->
 
-</div>
+ <div *ngFor="let item of items">
+     <p>{{item}}--1</p>
+     <p>{{item}}---2</p>
+ </div>
 
-<div *ngIF="showStudentData">
-    <ul *ngFor="let studentData of student">
-        <li>{{studentData.name}}</li>
-        <!-- <li>{{studentData.age}}</li>
-        <li>{{studentData.hobby}}</li> -->
+ <div *ngIf="showStudentData">
+     <ul *ngFor="let studentData of student">
+         <li>{{studentData.name}}</li>
+         <!-- <li>{{studentData.age}}</li>
+         <li>{{studentData.hobby}}</li> -->
+     </ul>
+ </div>
+ <!-- <img [src]="imgName"> -->
 
-    </ul>
-</div>
+ <div [ngSwitch]="color">
+     <h3 *ngSwitchCase="'green'">Green</h3>
+     <h3 *ngSwitchCase="'yellow'">Yellow</h3>
+     <h3 *ngSwitchCase="'blue'">blue</h3>
+     <h3 *ngSwitchCase="'pink'">Pink</h3>
+     <p *ngSwitchDefault>default </p>
+ </div>
 
-<div [ngSwitch]="color">
-    <h3 *ngSwitchCase=" 'red' ">Red</h3>
-    <h3 *ngSwitchCase=" 'Pink' ">Pink</h3>
-    <h3 *ngSwitchCase=" 'blue' ">Blue</h3>
-    <h3 *ngSwitchCase=" 'black' ">Black</h3>
-    <p *ngSwitchDefault>Default</p>
-</div>
+ <button (click)="switchColors('blue')">Blue</button>
+ <button (click)="switchColors('green')">Green</button>
+ <!-- Attribute Directives: Attribute directives are used to change the look and behavior
+ of the DOM elements.
+ For example: ngClass directive, and ngStyle directive etc.
+ ngClass Directive: The ngClass directive is used to add or remove CSS classes to
+ an HTML element.
+ ngStyle Directive: The ngStyle directive facilitates you to modify the style of
+ an HTML element using the expression. You can also use ngStyle directive to
+ dynamically change the style of your HTML element. -->
+ <div class="main main2">56565656655</div>
 
-<button (click)="switchColors('blue')">Blue</button>
-<button (click)="switchColors('red')">Red</button>
-<!-- Attribute Directives: Attribute directives are used to change the look and behavior 
-of the DOM elements.
-For example: ngClass directive, and ngStyle directive etc.
-ngClass Directive: The ngClass directive is used to add or remove CSS classes to 
-an HTML element.
-ngStyle Directive: The ngStyle directive facilitates you to modify the style of 
-an HTML element using the expression. You can also use ngStyle directive to 
-dynamically change the style of your HTML element. -->
+ <div [ngClass]="styleProperty ? styleProperty : 'main' ">
+ </div>
+ <br>
 
-<div class="main main2">1234</div>
+ <!-- important -->
+ <div [ngClass]="stylePropertyNew ? 'main2' : 'main' ">
+     property
+ </div>
 
-<div [ngClass]="styleProperty ? styleProperty : 'main' "></div>
-<br>
+ <div [ngClass]="setClass()">
+     function
+ </div>
 
-<div [ngClass]="stylePropertyNew ? 'main2' 'main'  "></div>
+ <!-- important -->
+ <div [class.main]="multipleStyle == 'poonam'"
+      [class.main2]="multipleStyle == 'patil'"
+     [class.main3]="multipleStyle== 'Bhapkar'">
+ </div>
 
-<div [class.main]="multipleStyle == 'Pratik' " [class.main2]="multipleStyle == 'Sunil' " [class.main3]="multipleStyle == 'Adchule' "></div>
+ <!-- //not to use -->
+ <p [ngStyle]="{'background-color':inLineCss =='red'?inLineCss:'blue'}">paragraph</p>
+
+ <!-- important -->
+ <div>
+     <h1 [class.main]="headingProperty"
+         [class.main2]="!headingProperty">
+         heading 1
+     </h1>
+     <h2>
+         heading 2
+     </h2>
+ </div>
 
 
 
