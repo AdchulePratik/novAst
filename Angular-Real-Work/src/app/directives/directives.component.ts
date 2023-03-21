@@ -15,28 +15,28 @@ export class DirectivesComponent {
   showStudentData: boolean = true;
   color = 'pink';
   styleProperty = 'main2';
-  stylePropertyNew = 2000000;
-  multipleStyle = 'Bhapkar';
+  stylePropertyNew = 50000;
+  multipleStyle = 'Adchule';
   inLineCss = 'red';
   headingProperty: any;
   student = [
     {
-      name: 'Raj',
-      age: 20,
-      hobby: 'painting'
+      name: 'Pratik',
+      age: 26,
+      hobby: 'Directoring'
     },
     {
-      name: 'Rupa',
-      age: 20,
+      name: 'Pooja',
+      age: 24,
       hobby: 'Dancing'
     },
     {
-      name: 'Ram',
-      age: 20,
+      name: 'Piya',
+      age: 22,
       hobby: 'Scketing'
     },
     {
-      name: 'Ravi',
+      name: 'jiya',
       age: 40,
       hobby: 'Swimming'
     },

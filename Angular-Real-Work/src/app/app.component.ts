@@ -7,21 +7,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent { //main component class : where we write code logic
-  title = 'angular_novbatch'; //properties
+  title = 'Angular-Real-Work'; //properties
   myName = 'pratik';
-  car = 'BMW';
+  car = 'Mercedeez...';
   mySurname : string = 'adchule';
-  mySurname2? : string; //syntax change 
+  mySurname2? : string; //syntax change
  // mySurname2 : string;
  testProperty : any = 5000;
 
   constructor(private router : Router){  // constructor : just normal function but it will triger implicity by compiler
       console.log('inside constuctor..');
   }
-  
-  test(){
+
+  public test(){
     var xyz = 100;
-    this.mySurname2 = 'Jadhav';
+    this.mySurname2 = 'Patil';
   }
 
   test2(){

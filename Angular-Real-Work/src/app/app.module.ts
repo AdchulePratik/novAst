@@ -13,7 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { FormComponent } from './form/form.component';
-import { CharactersonlyDirective } from './charctersonly.directive';
+import { CharactersonlyDirective } from './charactersonly.directive';
 import { SearchtextPipe } from './searchtext.pipe';
 import { CurrencyPipe1 } from './currency.pipe';
 

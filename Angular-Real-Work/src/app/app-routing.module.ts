@@ -26,10 +26,11 @@ const routes: Routes = [
   //Lazy Loading Concept
 
   { path: 'home-Module', loadChildren: () => import('./landing/home.module').then(mod => mod.HomeModule) },
-  { path: 'aboutUs-Module', loadChildren: () => import('./aboutus/aboutus.module').then(mod => mod.AboutusModule) },
+  // { path: 'aboutUs-Module', loadChildren: () => import('./aboutus/aboutus.module').then(mod => mod.AboutusModule) },
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   { path: 'test', loadChildren: () => import('./test/test.module').then(mod => mod.TestModule) },
   { path: '**', component: PagenotfoundComponent },
+  
 ];
 
 @NgModule({
