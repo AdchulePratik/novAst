@@ -2,12 +2,12 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 console.log('inside directive');
 
 @Directive({
-  selector: '[appCharactersonly]'
+  selector: '[ appCharactersonly ]'
 })
 export class CharactersonlyDirective {
 
 
-  constructor(private elementRef : ElementRef) { console.log('inside directive');}
+  constructor(private elementRef : ElementRef) {}
 
   @HostListener ('input' , ["$event"] )
   onInputBoxChange(){

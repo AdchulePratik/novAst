@@ -18,7 +18,7 @@ constructor(private dataService: DataService){
   ngOnInit(){
     //get set
      this.carName =  this.dataService.carName; //getting carname proprty's value
-     this.dataService.fruit = "Apple"; //setting fruit property's value
+     this.dataService.fruit = "Orange"; //setting fruit property's value
   }
   //to fetch data from service
   getData(){
@@ -37,7 +37,7 @@ constructor(private dataService: DataService){
     console.log('studentName', this.studentName);
   }
   setStudentName(){
-    let name = 'Riya';
+    let name = 'Priya';
     this.dataService.setStudentName(name);
     console.log(this.dataService.studentName);
   }
@@ -48,5 +48,3 @@ constructor(private dataService: DataService){
     console.log('res',res);
     }
 }
-
-

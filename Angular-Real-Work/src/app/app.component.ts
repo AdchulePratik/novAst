@@ -34,6 +34,15 @@ export class AppComponent { //main component class : where we write code logic
   aboutUsRedirect(){
     this.router.navigateByUrl('/aboutUs-Module/aboutUsDetails')
   }
+  // form(){
+  //   this.router.navigateByUrl('/form')
+  // }
+  reactiveFormRedirect(){
+    this.router.navigateByUrl('/reactiveForm')
+  }
+  reactiveFormRedirectByLazy(){
+    this.router.navigateByUrl('/angularFormsModule/reactiveForm')
+  }
 
 }
 

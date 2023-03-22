@@ -19,4 +19,5 @@ export class SearchtextPipe implements PipeTransform {
     return arrayOfObject.filter((item:any)=>{
     return  JSON.stringify(item).toLowerCase().includes(inputSearchBoxValue)
     })
-  }}
+  }
+}

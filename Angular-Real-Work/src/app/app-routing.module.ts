@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutuslandingComponent } from './aboutus/aboutuslanding/aboutuslanding.component';
+import { ReactiveformComponent } from './angularforms/reactiveform/reactiveform.component';
 import { ApplicationLandingComponent } from './application-landing/application-landing.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
-import { HomeComponent } from './home/home.component';
-import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home/home.component';
+import { LandingComponent } from './home/landing/landing.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { UserComponent } from './user/user.component';
 import { FormComponent } from './form/form.component';
@@ -22,15 +23,18 @@ const routes: Routes = [
   //{ path: 'aboutUsLanding', component :AboutuslandingComponent},dont do like this
   { path: 'directives', component: DirectivesComponent },
   { path: 'form', component: FormComponent },
+  {path: 'reactiveform',component:ReactiveformComponent},
+
 
   //Lazy Loading Concept
 
-  { path: 'home-Module', loadChildren: () => import('./landing/home.module').then(mod => mod.HomeModule) },
-  // { path: 'aboutUs-Module', loadChildren: () => import('./aboutus/aboutus.module').then(mod => mod.AboutusModule) },
+  { path : 'home-Module', loadChildren : () => import('./home/home.module').then(mod => mod.HomeModule)},
+  { path: 'aboutUs-Module', loadChildren: () => import('./aboutus/aboutus.module').then(mod => mod.AboutusModule) },
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   { path: 'test', loadChildren: () => import('./test/test.module').then(mod => mod.TestModule) },
-  { path: '**', component: PagenotfoundComponent },
-  
+  { path:'angularFormsModule', loadChildren : ()=> import('./angularforms/angularforms.module').then(m => m.AngularformsModule) },
+  { path: '**', component: PagenotfoundComponent},
+
 ];
 
 @NgModule({

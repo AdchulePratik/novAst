@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from '../home/home.component';
-import { LandingComponent } from './landing.component';
+import { HomeComponent } from './home/home.component';
+import { LandingComponent } from './landing/landing.component';
 
 console.log('inside home module.....');
 
@@ -22,5 +22,4 @@ console.log('inside home module.....');
   ]
 })
 export class HomeModule { }
-
 

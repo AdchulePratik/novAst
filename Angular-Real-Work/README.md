@@ -52,3 +52,8 @@ ng g m admin --routing   //use module & routing create command
 ng g m admin --route admin --module app.module  //use module & routing with component create command
 ng s -o   //use Compile Run working command
 ng g s Dataservice  //use Dataservice command
+ng g d directives //use didrectives
+ng g p pipe //use pipes
+ng serve // const compile run
+ng g m anyfoldername //seprate module ts
+

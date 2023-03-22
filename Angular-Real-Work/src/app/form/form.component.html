@@ -1,4 +1,5 @@
 <form>
+  <br>
   Enter Your First Name : <input type="text" appCharactersonly><br>
   Enter Your Last Name : <input type="text" appCharactersonly> <br>
   <h2>{{title | uppercase}}</h2>
@@ -10,24 +11,24 @@
   <p>{{todayDate2}}</p>
 
   <input type="text" [(ngModel)]="inputBoxValue" placeholder="search here.." [ngModelOptions]="{standalone: true}">
-  <br>  <br>
+  <br> <br>
   <table class="table-main">
-     <tr>
-        <th>Employee Name</th>
-        <th>Employee Age</th>
-        <th>Employee Sallary</th>
-     </tr>
-     <tr *ngFor="let empData of employee | searchtext:inputBoxValue">
-        <td>{{empData.name}}</td>
-        <td>{{empData.age}}</td>
-        <td>{{empData.salary}}</td>
-     </tr>
+    <tr>
+      <th>Employee Name</th>
+      <th>Employee Age</th>
+      <th>Employee Salary</th>
+    </tr>
+    <tr *ngFor="let empData of employee | searchtext:inputBoxValue">
+      <td>{{empData.name}}</td>
+      <td>{{empData.age}}</td>
+      <td>{{empData.salary}}</td>
+    </tr>
   </table>
- <br><br>
-  <input type="text" placeholder=" Enter amount ...." [(ngModel)] = "amount" [ngModelOptions]="{standalone: true}">
- <br> &#8377;{{amount | currency1}}
+  <br><br>
+  <input type="text" placeholder=" Enter amount ...." [(ngModel)]="amount" [ngModelOptions]="{standalone: true}">
+  <br> &#8377;{{amount | currency1}}
   <!-- {{amount|currency:"INR"}} -->
   <br>
- {{5000|currency:"INR" }}
+  {{5000|currency:"INR" }}
 
 </form>

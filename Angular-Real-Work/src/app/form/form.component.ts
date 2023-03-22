@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
-    title:string = 'my web page';
+    title:string = 'My Web Page';
     todayDate= '10-12-2023';
     today = new Date();
     todayDate2: any

@@ -15,9 +15,9 @@ export class TestContactComponent {
   webTitle!: string;
 
   getData() {
-    // fetching function from service 
-    this.webTitle = this.datatestService.test(  );
-    
+    // fetching function from service
+    this.webTitle = this.datatestService.test();
+
   }
 
 }

@@ -18,7 +18,7 @@ export class DataService {
   employee ={
     name: 'Kanchan',
     age:26,
-    mobNo:90117426069
+    mobNo:8668316816
 
   }
   constructor(){
@@ -34,5 +34,5 @@ export class DataService {
     return num1 * num2;
 
 
-  } 
+  }
 }

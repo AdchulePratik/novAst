@@ -10,7 +10,7 @@ export class DatatestService {
 
   car = this.dataService.carName;
   title = 'My Web Page';
-  
+
   test(){
     return this.title;
   }

@@ -10,7 +10,7 @@ export class DatabindingComponent {
   myName = "pratik";
   disableBox = false;
   no = 70;
-  surName = 'jadahv';
+  surName = 'Patil';
 
   getValue(){
   // return 'Raj';
