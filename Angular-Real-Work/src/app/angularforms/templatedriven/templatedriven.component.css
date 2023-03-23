@@ -1,5 +1,5 @@
 .Name{
-  color: brown;
+  color: aqua;
   background-color: black;
   font-size: medium;
 }
@@ -19,5 +19,10 @@
   color: brown;
   background-color: black;
   font-size: medium;
+
+}
+.login{
+  color:purple;
+
 
 }

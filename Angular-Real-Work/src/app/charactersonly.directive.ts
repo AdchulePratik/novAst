@@ -2,7 +2,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 console.log('inside directive');
 
 @Directive({
-  selector: '[ appCharactersonly ]'
+  selector: '[appCharactersonly]'
 })
 export class CharactersonlyDirective {
 

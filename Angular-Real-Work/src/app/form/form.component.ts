@@ -14,9 +14,9 @@ export class FormComponent {
     amountInDoller = 200;
     test! : number
    employee = [
-    {name:'Raj', age:40, salary : 40000},
-    {name:'Ravi', age:50, salary : 50000},
-    {name:'Shankar', age:40, salary : 40000}
+    {name:'Pooja', age:40, salary : 40000},
+    {name:'Riya', age:50, salary : 50000},
+    {name:'Jiya', age:40, salary : 40000}
    ]
 
 

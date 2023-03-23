@@ -23,17 +23,17 @@ const routes: Routes = [
   //{ path: 'aboutUsLanding', component :AboutuslandingComponent},dont do like this
   { path: 'directives', component: DirectivesComponent },
   { path: 'form', component: FormComponent },
-  {path: 'reactiveForm',component:ReactiveformComponent},
+  { path: 'reactiveForm', component: ReactiveformComponent },
 
 
   //Lazy Loading Concept
 
-  { path : 'home-Module', loadChildren : () => import('./home/home.module').then(mod => mod.HomeModule)},
+  { path: 'home-Module', loadChildren: () => import('./home/home.module').then(mod => mod.HomeModule) },
   { path: 'aboutUs-Module', loadChildren: () => import('./aboutus/aboutus.module').then(mod => mod.AboutusModule) },
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   { path: 'test', loadChildren: () => import('./test/test.module').then(mod => mod.TestModule) },
-  { path:'angularFormsModule', loadChildren : ()=> import('./angularforms/angularforms.module').then(m => m.AngularformsModule) },
-  { path: '**', component: PagenotfoundComponent},
+  { path: 'angularFormsModule', loadChildren: () => import('./angularforms/angularforms.module').then(m => m.AngularformsModule) },
+  { path: '**', component: PagenotfoundComponent },
 
 ];
 
