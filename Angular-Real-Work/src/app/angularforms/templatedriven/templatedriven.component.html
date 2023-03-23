@@ -3,4 +3,19 @@
 <input type="text" appCharactersonly> Enter Mob Nobr
 {{500 | currency1 }} -->
 
+<form #loginForm="ngForm" autocomplete="off">
+  <h3>Login Form</h3>
+  <!-- <label>Enter your Full Name: </label><br> -->
+  <input type="text" ngModel name="fullname" #fullname="ngModel" required minlength="5"
+    placeholder="Enter your name"><br>
+  <span> Hint :Enter Your Fullname:</span><br>
+  <span class="Name" ngIf="fullname.touched && fullname.errors?.['required']"> Name is required</span>
+  <span class="charchters" ngIf="fullname.errors?.['minlength']"> Enter atleast 5 charchters</span>
 
+  <!-- <label>Enter a Password</label><br> -->
+  <input type="text" ngModel name="Password"><br>
+  <span class="Password"> Enter a Password</span><br>
+
+  <button class="submit button" (click)="submit(loginForm.value)">Submit button</button>
+
+</form>

@@ -43,6 +43,9 @@ export class AppComponent { //main component class : where we write code logic
   reactiveFormRedirectByLazy(){
     this.router.navigateByUrl('/angularFormsModule/reactiveForm')
   }
+  templateDrivenForm(){
+    this.router.navigateByUrl('/angularFormsModule/templateDrivenForm');
+  }
 
 }
 

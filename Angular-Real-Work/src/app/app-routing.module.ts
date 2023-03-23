@@ -18,12 +18,12 @@ const routes: Routes = [
   { path: 'databinding', component: DatabindingComponent },
   { path: 'homeModule-home', component: HomeComponent },
   { path: 'landing', component: LandingComponent },
-  { path: 'aboutuslandingComponent', component: AboutuslandingComponent },
+  { path: 'aboutUslanding', component: AboutuslandingComponent },
 
   //{ path: 'aboutUsLanding', component :AboutuslandingComponent},dont do like this
   { path: 'directives', component: DirectivesComponent },
   { path: 'form', component: FormComponent },
-  {path: 'reactiveform',component:ReactiveformComponent},
+  {path: 'reactiveForm',component:ReactiveformComponent},
 
 
   //Lazy Loading Concept

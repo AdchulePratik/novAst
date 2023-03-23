@@ -4,9 +4,8 @@ import { CommonModule } from '@angular/common';
 import { AngularformsRoutingModule } from './angularforms-routing.module';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
-import { NumbersOnlyDirective } from './numbers-only.directive';
 import { ShareModule } from '../shared/shared.module';
-import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +20,8 @@ import { BrowserModule } from '@angular/platform-browser';
     CommonModule,
     // BrowserModule
     AngularformsRoutingModule,
-    ShareModule
+    ShareModule,
+    FormsModule
 
   ]
     // exports:[
