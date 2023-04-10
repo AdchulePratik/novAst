@@ -20,6 +20,12 @@ import { SearchtextPipe } from './searchtext.pipe';
 // import { TemplatedrivenComponent } from './angularforms/reactiveform/templatedriven/templatedriven.component';
 // import { NumbersOnlyDirective } from './numbers-only.directive';
 import { ShareModule } from './shared/shared.module';
+import { AppLandingComponent } from './app-landing/app-landing.component';
+import { LifeCycleParentComponent } from './life-cycle-parent/life-cycle-parent.component';
+import { LifecyclesHooksComponent } from './lifecycles-hooks/lifecycles-hooks.component';
+import { SubjectOneComponent } from './subject-one/subject-one.component';
+import { SubjectsComponent } from './subjects/subjects.component';
+import { HttpClientModule} from '@angular/common/http';
 
 
 
@@ -37,6 +43,11 @@ import { ShareModule } from './shared/shared.module';
     DirectivesComponent,
     FormComponent,
     SearchtextPipe,
+    AppLandingComponent,
+    LifeCycleParentComponent,
+    LifecyclesHooksComponent,
+    SubjectOneComponent,
+    SubjectsComponent,
 
 
 
@@ -46,6 +57,7 @@ import { ShareModule } from './shared/shared.module';
     AppRoutingModule,
     FormsModule,
     ShareModule,
+    HttpClientModule,
     // AngularformsModule
     // HomeModule,
     // ContactusModule

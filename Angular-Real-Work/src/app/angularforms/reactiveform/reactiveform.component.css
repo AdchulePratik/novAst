@@ -1,0 +1,34 @@
+.first-name{
+  color: red;
+}
+.name-required{
+  color: red;
+}
+.atleast{
+  color: red;
+}
+.lastName{
+  color: red;
+}
+.match-pattern{
+  color: red;
+}
+.lastName-required{
+  color: red;
+}
+
+.not-match{
+  color: red;
+}
+.password-notmatch{
+  color: red;
+}
+.password-match{
+  color: green;
+}
+.maxlength-digits{
+  color: red;
+}
+.title-word{
+  color: red;
+}

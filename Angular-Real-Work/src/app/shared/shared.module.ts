@@ -4,6 +4,7 @@ import { CharactersonlyDirective } from '../charactersonly.directive';
 import { CurrencyPipe1 } from '../currency.pipe';
 import { NumbersOnlyDirective } from '../angularforms/numbers-only.directive';
 
+
 @NgModule({
   declarations: [
     CharactersonlyDirective,

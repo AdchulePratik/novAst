@@ -1,28 +1,67 @@
-.Name{
+.login {
+  color:orchid;
+  font-size: xx-large;
+}
+.center-margin{
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+  background-color: blue;
+  height: 450px;
+  width: 450px;
+}
+
+.Fullname {
+  color:blanchedalmond;
+  background-color: black;
+  font-size: medium;
+}
+.placeholder{
+  color: chartreuse;
+}
+
+.Name {
   color: aqua;
-  background-color: black;
   font-size: medium;
 }
-.characters{
-  color: brown;
-  background-color: black;
-  font-size: medium;
 
-}
-.password{
-  color: brown;
-  background-color: black;
+.characters {
+  color: maroon;
+
   font-size: medium;
 
 }
-.submit button{
-  color: brown;
+.proper{
+  color: greenyellow;
+
+}
+.Enter-address{
+  color: crimson;
+  background-color: black;
+}
+
+input.ng-invalid.ng-touched{
+  border: red 1px solid;
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(red, green, blue, alpha) ;
+}
+.address-inputbox{
+  height: 100px;
+}
+.address-required{
+  color: chartreuse;
+}
+
+.password {
+  color: gold;
   background-color: black;
   font-size: medium;
 
 }
-.login{
-  color:purple;
 
+/* .submit {
+  color: white;
+  background-color: black;
+  font-size: medium;
 
-}
+} */

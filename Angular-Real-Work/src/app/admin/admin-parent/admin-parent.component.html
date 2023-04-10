@@ -1,0 +1,21 @@
+<!-- Data transmission technics in angular:
+
+if compo dont have relation:
+ 1. using service
+ 2. viewChild
+ 3. subjects(important)
+
+If component is having relation between them
+1. Parent to child data transfer @Input()
+2. Child to parent data transfer @Output()-->
+
+<div class="Enter-city"><br><br>
+  Enter a City: <input type="text" (keyup)="parentData($event)"><br>
+  <h1> {{dataFromChild}} </h1>
+</div><br><br>
+<app-admin [cityName]="parentCityName" [fruits]="fruit" (childData)="getChildData($event)"
+[table]="parentTable" ></app-admin><br><br>
+<app-admin-child2 [cityNameChild2]="parentCityName"
+  [objData]="obj"  [car]="cars"  ></app-admin-child2><br><br>
+
+<!-- <button routerLink="admin/adminChild" >Child</button> Not useful when coponents are live -->

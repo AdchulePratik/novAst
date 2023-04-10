@@ -3,19 +3,44 @@
 <input type="text" appCharactersonly> Enter Mob Nobr
 {{500 | currency1 }} -->
 
-<form #loginForm="ngForm" autocomplete="off">
+<button (click)="GetOwnerData()" >get Owner</button>
+
+<form #loginForm="ngForm" autocomplete="on" class="center-margin" >
+
   <h3 class="login">Login Form</h3>
+
   <!-- <label>Enter your Full Name: </label><br> -->
-  <input type="text" ngModel name="fullName" #fullName="ngModel" required minlength="5"
+
+  <span class="Fullname"> Hint :Enter Your Fullname : <br> </span><br>
+
+  <input type="text" ngModel name="fullName" #fullName="ngModel" pattern="[A-Za-z]*$" required minlength="5"
     placeholder="Enter your name"><br>
-  <span> Hint :Enter Your Fullname : <br> </span><br>
+
   <span class="Name" *ngIf="fullName.touched && fullName.errors?.['required']"> Name is required</span>
-  <span class="charchters" *ngIf="fullName.errors?.['minlength']"> Enter atleast 5 charchters</span>
 
-  <!-- <label>Enter a Password</label><br> -->
-  <input type="text" ngModel name="Password"><br>
-  <span class="Password"> Enter a Password : <br> </span><br>
+  <span class="characters" *ngIf="fullName.errors?.['minlength']"> Enter atleast 5 charchters</span>
 
-  <button class="submit button" (click)="submit(loginForm.value)">Submit button</button>
+  <span class="proper"
+    *ngIf="fullName.touched && !fullName.valid && fullName.errors?.['pattern'] && !fullName.errors?.['minlength']">Name
+    is Invalid please Enter Your proper Name-</span> <br>
+
+  <label class="Enter-address" >Enter Address</label><br><br>
+  <input class="address-inputbox" type="text" ngModel name="address" #address="ngModel" appCharactersOnly required minlength="5" placeholder="Enter your address"><br>
+  <span class="address-required" *ngIf="address.touched && address.errors?.['required']" > address is required </span><br>
+
+
+  <span class="password"> Enter a Password : <br> </span><br>
+
+  <input type="text" ngModel name="Password" placeholder="Enter a password">&nbsp; <br><br>
+  <!-- <i class="icon">eyes</i> <br><br> -->
+
+  <!-- <var aria-valuemin="ggggg">pratik</var><br><br> -->
+
+
+  <button [disabled]="!loginForm.valid" (click)="submit(loginForm.value)" > Submit </button>
+
+
 
 </form>
+
+

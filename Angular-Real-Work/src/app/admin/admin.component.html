@@ -1,1 +1,27 @@
-<p>admin works!</p>
+<div class="h1-tag">
+  <h1> {{cityName}} </h1>
+  <h2> {{cityFromService}} </h2>
+  <h3> {{fruits[1]}} </h3><br>
+
+  child data(Fav fruit): <input type="text" (keyup)="Favfruit($event)"><br>
+
+  <div *ngIf="table">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>MobNo</th>
+      </tr>
+      <tr *ngFor="let tableData of table">
+        <td> {{tableData.name}} </td>
+        <td> {{tableData.age}} </td>
+        <td> {{tableData.mobno}} </td>
+      </tr>
+    </table>
+
+  </div>
+
+
+</div>
+
+

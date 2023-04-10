@@ -10,6 +10,10 @@ import { LandingComponent } from './home/landing/landing.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { UserComponent } from './user/user.component';
 import { FormComponent } from './form/form.component';
+import { AppLandingComponent } from './app-landing/app-landing.component';
+import { LifeCycleParentComponent } from './life-cycle-parent/life-cycle-parent.component';
+import { LifecyclesHooksComponent } from './lifecycles-hooks/lifecycles-hooks.component';
+import { SubjectsComponent } from './subjects/subjects.component';
 
 
 const routes: Routes = [
@@ -24,6 +28,10 @@ const routes: Routes = [
   { path: 'directives', component: DirectivesComponent },
   { path: 'form', component: FormComponent },
   { path: 'reactiveForm', component: ReactiveformComponent },
+  {path: 'appLanding' ,component: AppLandingComponent},
+  { path: 'lifeCycleParent', component: LifeCycleParentComponent },
+  { path: 'lifeCycleHooks', component: LifecyclesHooksComponent },
+  {path: 'subject', component: SubjectsComponent},
 
 
   //Lazy Loading Concept

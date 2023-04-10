@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonApiCallService } from '../angularforms/common-api-call.service';
 
 @Component({
   selector: 'app-application-landing',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./application-landing.component.css']
 })
 export class ApplicationLandingComponent {
+
+  constructor(private CommonApiCallService: CommonApiCallService){
+
+  }
+
+  deleteById(){
+    this.CommonApiCallService.deleteApiCall('user',10).subscribe(respo=>{
+
+    })
+  }
+
+
 
 }
