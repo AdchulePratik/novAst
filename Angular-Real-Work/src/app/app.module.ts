@@ -26,6 +26,7 @@ import { LifecyclesHooksComponent } from './lifecycles-hooks/lifecycles-hooks.co
 import { SubjectOneComponent } from './subject-one/subject-one.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -58,6 +59,7 @@ import { HttpClientModule} from '@angular/common/http';
     FormsModule,
     ShareModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     // AngularformsModule
     // HomeModule,
     // ContactusModule

@@ -64,28 +64,36 @@ export class ReactiveformComponent {
   }
 
   submit() {
-  let endPoint = "user"
-  console.log('form data',this.studentDataForm.value);
-  this.CommonApiCallService.postApiCall(endPoint, this.studentDataForm.value).subscribe(respo =>{
+    let endPoint = "user"
+    console.log('form data', this.studentDataForm.value);
+    //4
+    console.log('mobno', this.studentDataForm.value.MobNobr);
+    // let mobileNo = this.studentDataForm.value.mobileNo; {mobNo:mobileNo}
+    let data = {
+      mobNo: this.studentDataForm.value.MobNobr,
+      name: this.studentDataForm.value.name
 
-  })
+    }
+    this.CommonApiCallService.postApiCall(endPoint, this.studentDataForm.value).subscribe(respo => {
 
-
-
-  }
+    });
+    this.CommonApiCallService.patchApiCall('admin',data,2).subscribe(respo=>{
+      
+    })
+}
   showPasswordFun() {
     this.showPassword = !this.showPassword;
   }
-  data(event: any){
-    console.log('event',event.target.value);
-}
-data1(value: any){
-  console.log('value',value);
-}
-data2(){
-  console.log('boxValue',this.boxValue);
+  data(event: any) {
+    console.log('event', event.target.value);
+  }
+  data1(value: any) {
+    console.log('value', value);
+  }
+  data2() {
+    console.log('boxValue', this.boxValue);
 
-}
+  }
 
 
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -24,5 +24,10 @@ deleteApiCall(endPoint:any ,id:number){
   let url = this.url + endPoint + '/' +id;
   return this.http.delete(url);
 }
+patchApiCall(endPoint: string,data:any,id:number){
+  let url = this.url + endPoint + '/' +id;
+  return this.http.patch(url,data);
 
+
+}
 }

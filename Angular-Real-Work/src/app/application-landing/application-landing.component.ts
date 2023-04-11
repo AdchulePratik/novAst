@@ -13,7 +13,7 @@ export class ApplicationLandingComponent {
   }
 
   deleteById(){
-    this.CommonApiCallService.deleteApiCall('user',10).subscribe(respo=>{
+    this.CommonApiCallService.deleteApiCall('user',4).subscribe(respo=>{
 
     })
   }

@@ -1,19 +1,199 @@
 {
-  "posts": [
+  "admin": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Pratik",
+      "city": "Akola",
+      "mobNo": 9011742609,
+      "password": "Pratik@123",
+      "confirmPassword": "Pratik@123",
+      "id": 1
+    },
+    {
+      "name": "Pooja",
+      "city": "Pune",
+      "mobNo": "99999999",
+      "password": "Pooja@123",
+      "confirmPassword": "Pooja@123",
+      "id": 2
     }
   ],
-  "comments": [
+  "user": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Riya",
+      "city": [
+        "Thane",
+        "pune"
+      ],
+      "mobNo": [
+        {
+          "key1": 7777918087
+        },
+        {
+          "key2": 5555
+        }
+      ],
+      "password": "Riya@123",
+      "confirmPassword": "Riya@123",
+      "id": 1
+    },
+    {
+      "name": "Sayu",
+      "city": "pune",
+      "mobNo": 88666688,
+      "id": 2,
+      "password": "Sayu@123",
+      "confirmPassword": "Sayu@123"
+    },
+    {
+      "name": "Rani",
+      "city": "Nagpur",
+      "mobNo": 8888885255,
+      "password": "Rani@123",
+      "confirmPassword": "Rani@123",
+      "id": 3
+    },
+    {
+      "name": "Disha",
+      "mobileNo": "44444",
+      "tnc": true,
+      "lastName": "Patani",
+      "title": "test",
+      "city": "Mumbai",
+      "password": "Disha@123",
+      "confirmPassword": "Disha@123",
+      "id": 5
+    },
+    {
+      "name": "Kiara",
+      "mobileNo": "44444",
+      "tnc": true,
+      "lastName": "Adwani",
+      "title": "test",
+      "city": "Mumbai",
+      "password": "Kiara@123",
+      "confirmPassword": "Kiara123",
+      "id": 6
+    },
+    {
+      "name": "Bhumi",
+      "mobileNo": "3333",
+      "tnc": true,
+      "lastName": "Pendekar",
+      "title": "qqq",
+      "city": "Pune",
+      "password": "Bhumi@123",
+      "confirmPassword": "Bhumi@123",
+      "id": 7
+    },
+    {
+      "name": "Sai",
+      "mobileNo": "44444444",
+      "tnc": true,
+      "lastName": "Tamhnkar",
+      "title": "444",
+      "city": "Satara",
+      "password": "Sai@123",
+      "confirmPassword": "Sai@123",
+      "id": 8
+    },
+    {
+      "name": "Aaliya",
+      "mobileNo": "99999999",
+      "tnc": true,
+      "lastName": "Bhatt",
+      "title": "rrrr",
+      "city": "Mumbai",
+      "password": "Aaliya@123",
+      "confirmPassword": "Aaliya@123",
+      "id": 9
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "owner": [
+    {
+      "name": "Katrina",
+      "city": "Mumbai",
+      "mobNo": 8779180087,
+      "password": "Kat@123",
+      "confirmPassword": "Kat@123",
+      "id": 1
+    },
+    {
+      "name": "Jacquline",
+      "city": "Thane",
+      "mobNo": 7777918087,
+      "password": "sagar@123",
+      "confirmPassword": "sagar@123",
+      "id": 2
+    },
+    {
+      "name": "Kirti",
+      "city": "Mumbai",
+      "mobNo": 8888885255,
+      "password": "Kirti@123",
+      "confirmPassword": "Kirti@123",
+      "id": 3
+    }
+  ],
+  "hotelDetails": [
+    {
+      "hotelName": "Grand-Sita",
+      "city": "Gondiya",
+      "hotelMobNo": 8779180087,
+      "roomAvailable": "yes",
+      "hotelMenu": "Veg KoftaKari",
+      "checkInTime": "10.00 AM",
+      "checkOutTime": "09.00 AM",
+      "T&C": true,
+      "price": 1500,
+      "id": 1
+    },
+    {
+      "hotelName": "Orchid",
+      "city": "Mumbai",
+      "hotelMobNo": 9898989890,
+      "roomAvailable": "yes",
+      "hotelMenu": "Paner Kadai",
+      "checkInTime": "10.00 AM",
+      "checkOutTime": "09.00 AM",
+      "T&C": true,
+      "price": 1600,
+      "id": 2
+    },
+    {
+      "hotelName": "Taj",
+      "city": "Mumbai",
+      "hotelMobNo": 999999999,
+      "roomAvailable": "yes",
+      "hotelMenu": "Paneer Kalegi",
+      "checkInTime": "10.00 AM",
+      "checkOutTime": "09.00 AM",
+      "T&C": true,
+      "price": 1500,
+      "id": 3
+    },
+    {
+      "hotelName": "5Star",
+      "city": "Thane",
+      "hotelMobNo": 999999999,
+      "roomAvailable": "yes",
+      "hotelMenu": "Panir masala",
+      "checkInTime": "10.00 AM",
+      "checkOutTime": "09.00 AM",
+      "T&C": true,
+      "price": 1500,
+      "id": 4
+    },
+    {
+      "hotelName": "GreenLand",
+      "city": "Akola",
+      "hotelMobNo": 8779180087,
+      "roomAvailable": "yes",
+      "hotelMenu": "Panir Tikka",
+      "checkInTime": "10.00 AM",
+      "checkOutTime": "09.00 AM",
+      "T&C": true,
+      "price": 1500,
+      "id": "Green123"
+    }
+  ]
 }
