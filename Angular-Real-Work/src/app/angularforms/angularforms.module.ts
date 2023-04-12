@@ -7,6 +7,12 @@ import { TemplatedrivenComponent } from './templatedriven/templatedriven.compone
 import { ShareModule } from '../shared/shared.module';
 import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
 import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from "@angular/material/input";
+import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
+
+
 
 
 @NgModule({
@@ -24,7 +30,13 @@ import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
     AngularformsRoutingModule,
     ShareModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+
+
 
   ]
     // exports:[

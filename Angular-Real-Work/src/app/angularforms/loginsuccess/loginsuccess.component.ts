@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 import { CommonApiCallService } from '../common-api-call.service';
 import { HttpClient } from '@angular/common/http';
+import { FormBuilder,FormGroup,Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-loginsuccess',
@@ -16,12 +17,13 @@ export class LoginsuccessComponent {
   hotelDetailsEndPoint = "hotelDetails"
   hotelDetails: any;
   subscibedData: any;
+  matForm!: FormGroup;
 
 
 
 
   constructor(private dataservice: DataService, private http: HttpClient,
-    private CommonApiCallService: CommonApiCallService) {
+    private CommonApiCallService: CommonApiCallService,private fb: FormBuilder) {
 
   }
 
@@ -35,7 +37,20 @@ export class LoginsuccessComponent {
       console.log('this.hotelDetails', respo);
 
     });
+
+    this.matFormDef()
   }
+
+  matFormDef(){
+    this.matForm = this.fb.group({
+      name: ['',[Validators.required]],
+      mobno: ['',[Validators.required]],
+      pass: ['']
+
+    })
+  }
+
+
   getUserData() {
     this.CommonApiCallService.getApiCall(this.endPoint).subscribe(respo => {
       this.userData = respo;
@@ -47,6 +62,16 @@ export class LoginsuccessComponent {
     //   this.userData = res;
     // })
   }
+  visibility(){
+    console.log('visss');
+
+  }
+  invisible(){
+    console.log('hidee');
+
+  }
+
+
   ngOnDestroy() {
     this.subscibedData.unsubscribe(); //to avoid memory leakage problem we should have to unsubscribe
 
